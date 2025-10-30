@@ -33,9 +33,9 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root{
+  :root {
     --bg-image: url('../images/cover-image-light.png');
-    
+
     --bg-color: #FFF1F7;
     --font-type: 'IBM Plex Mono';
     --accent-color: #FFC2E6;
@@ -57,6 +57,7 @@
     --space_m: 1.25rem;   /* 20px */
     --space_l: 1.5625rem; /* 25px */
   }
+  
   .header__rec {
     display: none;
   }
