@@ -276,6 +276,7 @@
   place-items: center;
   block-size: 100vh;
   min-height: 668px;
+  margin-block: 10px;
 }
 
 .footer__title {
@@ -285,8 +286,7 @@
   color: var(--accent-color);
   text-shadow: var(--shadow);
   font-size: var(--font-size-header);
-  margin-block-start: 0.938rem; /* 15px */
-  margin-block-end: 0;
+  margin-block: 0;
 }
 
 
@@ -295,9 +295,15 @@
     padding-block-end: 0;
   }
 
+  .decorated-zone {
+    margin-block-start: 10px;
+    margin-inline-end: 10px;
+  }
+
   .header__theme-menu {
     align-self: flex-start;
-    margin-block-start: 45px;
+    margin-block-start: 32px;
+    margin-inline-end: -10px;
   }
 
   .header__theme-menu-list {
@@ -307,7 +313,8 @@
 
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin: 0;
+    margin-block-end: 25px;
+    margin-inline-start: -10px;
   }
 
   .title-decor {
@@ -318,10 +325,11 @@
   .header__text {
     margin-inline-end: var(--space_m);
     margin-inline-start: 384px;
-    margin-block-end: var(--space-s);
+    margin-block-end: 60px;
   }
 
   .section {
+    margin-block-start: -5px;
     padding-inline: var(--space_m);
   }
 
@@ -339,12 +347,25 @@
   .section:nth-child(even):not(.gallery) {
     display: grid;
     grid-template-rows: min-content 1fr;
-    gap: var(--space_m);
+    gap: 5px;
+    margin-block-start: 2px;
   }
 
   .section:nth-child(even):not(.gallery) .section__title {
     max-width: 30%;
     overflow-wrap: break-word;
+  }
+
+  .section:nth-of-type(2) .section__card .card:nth-child(n+1):nth-child(-n+2) .card__title {
+    margin-block-start: 15px;
+  }
+
+  .section:nth-of-type(2) .card:not(:first-child) .section__card_title {
+    margin-block-start: 5px;
+  }
+
+  .section:nth-of-type(3) {
+    margin-block-start: 15px;
   }
 
   .section__title {
@@ -398,9 +419,15 @@
     grid-row: 3 / 4;
   }
 
+  .footer {
+    margin-block-start: 30px;
+    margin-inline: 0;
+    margin-block-end: 0;
+  }
+
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-block-end: var(--space-s);
+    margin-block-start: 10px;
   }
 
 }
