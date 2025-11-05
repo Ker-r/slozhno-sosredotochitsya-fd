@@ -105,11 +105,11 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px var(--title-color) solid;
+  border: 1px var(--menu-button-color) solid;
 }
 
 .header__theme-menu-button_active {
-  border: 1px var(--decor-bg) solid;
+  border: 1px var(--title-color) solid;
   pointer-events: none;
 }
 
@@ -118,7 +118,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px var(--decor-bg) solid;
+  border-bottom: 1px var(--title-color) solid;
 }
 
 .header__title {

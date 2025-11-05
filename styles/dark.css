@@ -17,3 +17,7 @@
 .theme-dark .header__rec {
   display: flex;
 }
+
+.theme-dark .header__theme-menu-button:hover {
+  --menu-button-color: rgba(255, 0, 112, 0.4);
+}
