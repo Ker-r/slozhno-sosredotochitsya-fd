@@ -19,6 +19,7 @@
   --font-size-header: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --font-weight-normal: 400;
   --font-weight-bold: 700;
+  --menu-button-color: rgba(255, 0, 112, 0.4);
 
   --space-xs: 0.3125rem;  /* 5px */
   --space-s: 0.625rem;  /* 10px */

@@ -27,6 +27,7 @@
   --decor-bg: #FF8DCB;
   --decor-text: #353430;
   --color-text: #353430;
+  --menu-button-color: rgba(50, 49, 45, 0.4);
   }
   
   .header__rec {
@@ -36,8 +37,4 @@
 
 .theme-light .header__rec {
   display: none;
-}
-
-.theme-light .header__theme-menu-button:hover {
-  --menu-button-color: rgba(50, 49, 45, 0.4);
 }
