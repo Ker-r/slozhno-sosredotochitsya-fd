@@ -13,3 +13,7 @@
   --decor-text: #000028;
   --color-text: #F1B2CE;
 }
+
+.theme-dark .header__rec {
+  display: flex;
+}
